@@ -11,6 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+//AUTH ROUTES
+Route::group(['prefix'=>'auth'],function(){
+  Route::get('login','AuthController@formLogin');
+  Route::get('forgot-password','AuthController@formForgotPassword');
+  Route::post('login','AuthController@auth');
+  Route::post('logout','AuthController@logout');
 });
+
+Route::get('/','HomeController@index');
+
+
+Route::resource('empleados','EmployeeController');
