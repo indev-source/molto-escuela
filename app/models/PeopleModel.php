@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class PeopleModel extends Model
 {
     protected $table = 'peoples';
-    protected $fillable = ['name','lastname','mothers_lastname','nss','rfc','curp','address_id','campus_id','user_id'];
+    protected $fillable = ['name','lastname','mothers_lastname','rfc','curp','address_id','campus_id','user_id','birthday','phone_office','mobile_phone'];
 
     public function user(){
         return $this->belongsTo('App\models\UserModel','user_id');

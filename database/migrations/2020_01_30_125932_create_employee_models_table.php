@@ -16,6 +16,8 @@ class CreateEmployeeModelsTable extends Migration
         Schema::create('employee', function (Blueprint $table) {
             $table->increments('id');
 
+            $table->string('nss',12);
+
             $table->integer('people_id')->unsigned();
             $table->foreign('people_id')->references('id')->on('peoples');
 

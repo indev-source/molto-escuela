@@ -18,9 +18,12 @@ class CreatePeopleModelsTable extends Migration
             $table->string('name',50);
             $table->string('lastname',50);
             $table->string('mothers_lastname',50);
-            $table->string('nss',12);
             $table->string('curp',18);
             $table->string('rfc',18);
+            //nuevos datos
+            $table->date('birthday');
+            $table->string('phone_office',10)->nullable(false);
+            $table->string('mobile_phone',10)->nullable(false);
 
             $table->integer('address_id')->unsigned();
             $table->foreign('address_id')->references('id')->on('address');

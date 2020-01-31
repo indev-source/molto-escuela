@@ -11,7 +11,7 @@
                     class="hide-menu">Empleados
                 </span></a>
         </li>
-        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="app-chat.html"
+        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="/alumnos"
                 aria-expanded="false"><i data-feather="users" class="feather-icon"></i><span
                     class="hide-menu">Alumnos</span></a>
         </li>
@@ -33,11 +33,11 @@
                 aria-expanded="false"><i data-feather="home" class="feather-icon"></i><span
                     class="hide-menu">Planteles </span></a>
             <ul aria-expanded="false" class="collapse  first-level base-level-line">
-                <li class="sidebar-item"><a href="form-inputs.html" class="sidebar-link"><span
+                <li class="sidebar-item"><a href="/planteles/create" class="sidebar-link"><span
                             class="hide-menu"> Agregar nuevo
                         </span></a>
                 </li>
-                <li class="sidebar-item"><a href="form-input-grid.html" class="sidebar-link"><span
+                <li class="sidebar-item"><a href="/planteles" class="sidebar-link"><span
                             class="hide-menu"> Listado de planteles
                         </span></a>
                 </li>

@@ -26,11 +26,6 @@
         <input type="hidden" name="type_address" value="employees">
         <input type="hidden" name="rol" value="empleado">
         <div class="row">
-            <div class="col-12 mt-4">
-                <h4 class="mb-0">Card styles</h4>
-                <p class="text-muted mt-0 font-12">Cards include various options for customizing their
-                    backgrounds, borders, and color.<code>.card-primary info, warning, danger</code></p>
-            </div>
             <div class="col-md-6">
                 <div class="card text-white bg-dark">
                     <div class="card-header">
@@ -52,8 +47,14 @@
                     <div class="card-body">
                         <h3 class="card-title text-white"><span class="badge badge-primary">3</span> Datos de usuario</h3>
                         @include('school.credentials.form-create') <br>
-                        <h3 class="card-title text-white"><span class="badge badge-primary">2</span> Cargo en la empresa</h3>
+                        <h3 class="card-title text-white"><span class="badge badge-primary">$</span> Cargo en la empresa</h3>
                         <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="form-group">
+                                    {!! Form::label('nss','NSS') !!}
+                                    {!! Form::text('nss','',['class'=>'form-control']) !!}
+                                </div>
+                            </div>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <div class="form-group">
                                     {!! Form::label('position_id','Puesto') !!}

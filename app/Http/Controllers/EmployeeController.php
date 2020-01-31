@@ -44,14 +44,14 @@ class EmployeeController extends Controller{
             $user                 = $userModel->add($userData);
 
             //create poeple's data
-            $peopleData               = $request->only('name','lastname','mothers_lastname','nss','curp','rfc','campus_id');
+            $peopleData               = $request->only(['name','lastname','mothers_lastname','curp','rfc','campus_id','birthday','phone_office','mobile_phone']);
             $peopleData['address_id'] = $address->id;
             $peopleData['user_id']    = $user->id;
             $peopleModel              = new PeopleModel();
             $people                   = $peopleModel->add($peopleData);
 
             //create employee's data
-            $employee              = $request->only(['position_id']);
+            $employee              = $request->only(['position_id','nss']);
             $employee['people_id'] = $people->id;
             $employeeModel         = new EmployeeModel();
             $employeeModel->add($employee);
@@ -63,6 +63,7 @@ class EmployeeController extends Controller{
 
         }catch(\Exception $e) {
             DB::rollBack();
+            dd($e);
             alert()->warning("Ha ocurrido en el servidor: ".$e->getMessage());
             return back();
         }
@@ -82,7 +83,7 @@ class EmployeeController extends Controller{
             $employeeModel  = $this->getEmployeeWithId($employeeId);
 
             //update poeple's data
-            $peopleData               = $request->only('name','lastname','mothers_lastname','nss','curp','rfc','campus_id');
+            $peopleData               = $request->only(['name','lastname','mothers_lastname','curp','rfc','campus_id','birthday','phone_office','mobile_phone']);
             $peopleModel              = PeopleModel::findOrFail($employeeModel->people_id);
             $people                   = $peopleModel->edit($peopleData);
 

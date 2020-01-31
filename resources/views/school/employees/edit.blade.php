@@ -39,9 +39,9 @@
                     </div>
                     <div class="card-body">
                         <h3 class="card-title text-white"><span class="badge badge-primary">1</span> Identidad del empleado</h3>
-                        @include('school.peoples.form-edit')
+                        @include('school.peoples.form-edit',['people'=>$employee->people])
                         <h3 class="card-title text-white"><span class="badge badge-primary">2</span> Direccion del empleado</h3>
-                        @include('school.address.form-edit')
+                        @include('school.address.form-edit',['address'=>$employee->people->address])
                     </div>
                 </div>
             </div>

@@ -21,8 +21,8 @@
 <div class="row">
     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
         <div class="form-group">
-            {!! Form::label('nss','NSS') !!}
-            {!! Form::text('nss','',['class'=>'form-control']) !!}
+            {!! Form::label('birthday','Fecha de nacimiento') !!}
+            {!! Form::date('birthday','',['class'=>'form-control']) !!}
         </div>
     </div>
     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
@@ -43,6 +43,18 @@
         <div class="form-group">
             {!! Form::label('campus_id','Plantel') !!}
             {!! Form::select('campus_id',$campus,'',['class'=>'form-control','placeholder'=>'Selecciona un plantel disponible']) !!}
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="form-group">
+            {!! Form::label('phone_office','Telefono de la oficina') !!}
+            {!! Form::text('phone_office','',['class'=>'form-control']) !!}
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="form-group">
+            {!! Form::label('mobile_phone','Telefono celular') !!}
+            {!! Form::text('mobile_phone','',['class'=>'form-control']) !!}
         </div>
     </div>
 </div>

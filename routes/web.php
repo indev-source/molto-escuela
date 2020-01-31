@@ -23,3 +23,5 @@ Route::get('/','HomeController@index');
 
 
 Route::resource('empleados','EmployeeController');
+Route::resource('alumnos','StudentController');
+Route::resource('planteles','CampusController');
