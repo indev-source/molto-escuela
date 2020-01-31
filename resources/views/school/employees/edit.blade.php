@@ -52,7 +52,7 @@
                     </div>
                     <div class="card-body">
                         <h3 class="card-title text-white"><span class="badge badge-primary">3</span> Datos de usuario</h3>
-                        @include('school.credentials.form-edit') <br>
+                        @include('school.credentials.form-edit',['user'=>$employee->people->user]) <br>
                         <h3 class="card-title text-white"><span class="badge badge-primary">2</span> Cargo en la empresa</h3>
                         <div class="row">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">

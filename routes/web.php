@@ -13,15 +13,17 @@
 
 //AUTH ROUTES
 Route::group(['prefix'=>'auth'],function(){
-  Route::get('login','AuthController@formLogin');
+  Route::get('login','AuthController@formLogin')->name('login');
   Route::get('forgot-password','AuthController@formForgotPassword');
   Route::post('login','AuthController@auth');
   Route::post('logout','AuthController@logout');
 });
 
-Route::get('/','HomeController@index');
+Route::get('/','HomeController@index')->middleware('auth');
 
-
-Route::resource('empleados','EmployeeController');
-Route::resource('alumnos','StudentController');
-Route::resource('planteles','CampusController');
+Route::resource('representantes','RepresentativeController')->middleware('auth');
+Route::resource('planteles','CampusController')->middleware('auth');
+Route::resource('puestos','PositionController')->middleware('auth');
+Route::resource('empleados','EmployeeController')->middleware('auth');
+Route::resource('tutores','TutorController')->middleware('auth');
+Route::resource('alumnos','StudentController')->middleware('auth');

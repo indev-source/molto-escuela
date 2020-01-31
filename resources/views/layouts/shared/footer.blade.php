@@ -1,4 +1,3 @@
 <footer class="footer text-center text-muted">
-    All Rights Reserved by Adminmart. Designed and Developed by <a
-        href="https://wrappixel.com">WrapPixel</a>.
+    Todos los derechos reservador Moltobella | <a href="#">Inusual Software</a>
 </footer>

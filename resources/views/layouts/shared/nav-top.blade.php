@@ -12,68 +12,7 @@
         </a>
         <div class="dropdown-menu dropdown-menu-left mailbox animated bounceInDown">
             <ul class="list-style-none">
-                <li>
-                    <div class="message-center notifications position-relative">
-                        <!-- Message -->
-                        <a href="javascript:void(0)"
-                            class="message-item d-flex align-items-center border-bottom px-3 py-2">
-                            <div class="btn btn-danger rounded-circle btn-circle"><i
-                                    data-feather="airplay" class="text-white"></i></div>
-                            <div class="w-75 d-inline-block v-middle pl-2">
-                                <h6 class="message-title mb-0 mt-1">Luanch Admin</h6>
-                                <span class="font-12 text-nowrap d-block text-muted">Just see
-                                    the my new
-                                    admin!</span>
-                                <span class="font-12 text-nowrap d-block text-muted">9:30 AM</span>
-                            </div>
-                        </a>
-                        <!-- Message -->
-                        <a href="javascript:void(0)"
-                            class="message-item d-flex align-items-center border-bottom px-3 py-2">
-                            <span class="btn btn-success text-white rounded-circle btn-circle"><i
-                                    data-feather="calendar" class="text-white"></i></span>
-                            <div class="w-75 d-inline-block v-middle pl-2">
-                                <h6 class="message-title mb-0 mt-1">Event today</h6>
-                                <span
-                                    class="font-12 text-nowrap d-block text-muted text-truncate">Just
-                                    a reminder that you have event</span>
-                                <span class="font-12 text-nowrap d-block text-muted">9:10 AM</span>
-                            </div>
-                        </a>
-                        <!-- Message -->
-                        <a href="javascript:void(0)"
-                            class="message-item d-flex align-items-center border-bottom px-3 py-2">
-                            <span class="btn btn-info rounded-circle btn-circle"><i
-                                    data-feather="settings" class="text-white"></i></span>
-                            <div class="w-75 d-inline-block v-middle pl-2">
-                                <h6 class="message-title mb-0 mt-1">Settings</h6>
-                                <span
-                                    class="font-12 text-nowrap d-block text-muted text-truncate">You
-                                    can customize this template
-                                    as you want</span>
-                                <span class="font-12 text-nowrap d-block text-muted">9:08 AM</span>
-                            </div>
-                        </a>
-                        <!-- Message -->
-                        <a href="javascript:void(0)"
-                            class="message-item d-flex align-items-center border-bottom px-3 py-2">
-                            <span class="btn btn-primary rounded-circle btn-circle"><i
-                                    data-feather="box" class="text-white"></i></span>
-                            <div class="w-75 d-inline-block v-middle pl-2">
-                                <h6 class="message-title mb-0 mt-1">Pavan kumar</h6> <span
-                                    class="font-12 text-nowrap d-block text-muted">Just
-                                    see the my admin!</span>
-                                <span class="font-12 text-nowrap d-block text-muted">9:02 AM</span>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <a class="nav-link pt-3 text-center text-dark" href="javascript:void(0);">
-                        <strong>Check all notifications</strong>
-                        <i class="fa fa-angle-right"></i>
-                    </a>
-                </li>
+
             </ul>
         </div>
     </li>
@@ -86,23 +25,12 @@
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i data-feather="settings" class="svg-icon"></i>
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-        </div>
+
     </li>
     <li class="nav-item d-none d-md-block">
         <a class="nav-link" href="javascript:void(0)">
             <div class="customize-input">
-                <select
-                    class="custom-select form-control bg-white custom-radius custom-shadow border-0">
-                    <option selected>EN</option>
-                    <option value="1">AB</option>
-                    <option value="2">AK</option>
-                    <option value="3">BE</option>
-                </select>
+
             </div>
         </a>
     </li>
@@ -119,7 +47,7 @@
             <form>
                 <div class="customize-input">
                     <input class="form-control custom-shadow custom-radius border-0 bg-white"
-                        type="search" placeholder="Search" aria-label="Search">
+                        type="search" placeholder="Buscar" aria-label="Search">
                     <i class="form-control-icon" data-feather="search"></i>
                 </div>
             </form>
@@ -133,7 +61,7 @@
             aria-haspopup="true" aria-expanded="false">
             <img src="{{asset('icons/boy.png')}}" alt="user" class="rounded-circle"
                 width="40">
-            <span class="ml-2 d-none d-lg-inline-block"><span>Hello,</span> <span
+            <span class="ml-2 d-none d-lg-inline-block"><span>Hola,</span> <span
                     class="text-dark">{{Auth::user()->email}}</span> <i data-feather="chevron-down"
                     class="svg-icon"></i></span>
         </a>

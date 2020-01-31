@@ -53,23 +53,10 @@
                     <!-- ============================================================== -->
                     <!-- Logo -->
                     <!-- ============================================================== -->
-                    <div class="navbar-brand">
+                    <div class="navbar-brand text-center">
                         <!-- Logo icon -->
-                        <a href="index.html">
-                            <b class="logo-icon">
-                                <!-- Dark Logo icon -->
-                                <img src="../assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
-                                <!-- Light Logo icon -->
-                                <img src="../assets/images/logo-icon.png" alt="homepage" class="light-logo" />
-                            </b>
-                            <!--End Logo icon -->
-                            <!-- Logo text -->
-                            <span class="logo-text">
-                                <!-- dark Logo text -->
-                                <img src="../assets/images/logo-text.png" alt="homepage" class="dark-logo" />
-                                <!-- Light Logo text -->
-                                <img src="../assets/images/logo-light-text.png" class="light-logo" alt="homepage" />
-                            </span>
+                        <a href="/" class="text-center">
+                            <img src="{{asset('icons/logo.jpeg')}}" style="width:100%; height:100px; margin-bottom: 20px; border-radius: 5px; margin-top:20px;" alt="">
                         </a>
                     </div>
                     <!-- ============================================================== -->

@@ -27,7 +27,7 @@ class CreateCampuModelsTable extends Migration
             $table->integer('representative_id')->unsigned();
             $table->foreign('representative_id')->references('id')->on('representatives');
 
-            $table->boolean('is_active')->default(0);
+            $table->boolean('is_active')->default(1);
             $table->timestamps();
         });
     }
